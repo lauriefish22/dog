@@ -11,9 +11,16 @@ let dogsData = [];
 window.addEventListener('load', async () => {
     const dogs = await getDogs();
     dogsData = dogs;
+    console.log(dogs);
+    displayDogs();
 });
 
 // render and append all dog cards to the container
-for (let dog of dogsData) {
-    const dogEl = renderDogCard(dog);
+
+function displayDogs() {
+    dogListContainer.textContent = '';
+    for (let dog of dogsData) {
+        const dogEl = renderDogCard(dog);
+        dogListContainer.append(dogEl);
+    }
 }
