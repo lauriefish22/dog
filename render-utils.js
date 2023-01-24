@@ -39,7 +39,7 @@ export function renderDogDetail(dogData) {
     descriptionEl.textContent = dogData.description;
     nameEl.textContent = dogData.name;
     ageEl.textContent = dogData.age;
-    breedEl.textContent = dogData.breed;
+    breedEl.textContent = dogData.dog_breeds.name;
     ageAndBreedEl.append(breedEl, ageEl);
     div.append(img, descriptionEl, nameEl);
     div.append(ageAndBreedEl);
