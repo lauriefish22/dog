@@ -9,7 +9,7 @@ window.addEventListener('load', async () => {
     const id = data.get('id');
     const dog = await getDog(id);
     dogData = dog;
-    console.log(dogData);
+
     //renderDogDetail(dog);
     //dogDetailContainer.append(dog);
     displayDog(dogData);
