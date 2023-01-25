@@ -11,7 +11,7 @@ let dogsData = [];
 window.addEventListener('load', async () => {
     const dogs = await getDogs();
     dogsData = dogs;
-    console.log(dogs);
+
     displayDogs();
 });
 
